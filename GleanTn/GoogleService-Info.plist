@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>431241114929-dvpt3e07j7r14n5ara1i9blq7qpb8taj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.431241114929-dvpt3e07j7r14n5ara1i9blq7qpb8taj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA5Jqd_eKC5ZI5Vm2pQQ6KpMgth2bx-b9U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>431241114929</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.saba.GleanTn</string>
+	<key>PROJECT_ID</key>
+	<string>gleantn-1794b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gleantn-1794b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:431241114929:ios:eb49de505d187dbd</string>
+	<key>DATABASE_URL</key>
+	<string>https://gleantn-1794b.firebaseio.com</string>
+</dict>
+</plist>
