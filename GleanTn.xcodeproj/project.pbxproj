@@ -12,9 +12,11 @@
 		3368263A1F76B29C00732302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 336826381F76B29C00732302 /* Main.storyboard */; };
 		3368263C1F76B29C00732302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3368263B1F76B29C00732302 /* Assets.xcassets */; };
 		3368263F1F76B29C00732302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3368263D1F76B29C00732302 /* LaunchScreen.storyboard */; };
+		B568F705B16FA38BBC124229 /* Pods_GleanTn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5118EBFD163E61A0AF9E42 /* Pods_GleanTn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C5118EBFD163E61A0AF9E42 /* Pods_GleanTn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GleanTn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		336826311F76B29C00732302 /* GleanTn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GleanTn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		336826341F76B29C00732302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		336826361F76B29C00732302 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		3368263B1F76B29C00732302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3368263E1F76B29C00732302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		336826401F76B29C00732302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7573913075FA85AB12B019B /* Pods-GleanTn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GleanTn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GleanTn/Pods-GleanTn.debug.xcconfig"; sourceTree = "<group>"; };
+		D5E87654BB2E46562431D9FB /* Pods-GleanTn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GleanTn.release.xcconfig"; path = "Pods/Target Support Files/Pods-GleanTn/Pods-GleanTn.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B568F705B16FA38BBC124229 /* Pods_GleanTn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		264C67E8ED6E6B37BF60D071 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7573913075FA85AB12B019B /* Pods-GleanTn.debug.xcconfig */,
+				D5E87654BB2E46562431D9FB /* Pods-GleanTn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		336826281F76B29C00732302 = {
 			isa = PBXGroup;
 			children = (
 				336826331F76B29C00732302 /* GleanTn */,
 				336826321F76B29C00732302 /* Products */,
+				264C67E8ED6E6B37BF60D071 /* Pods */,
+				A08713922FCED382FB20F7CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = GleanTn;
 			sourceTree = "<group>";
 		};
+		A08713922FCED382FB20F7CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C5118EBFD163E61A0AF9E42 /* Pods_GleanTn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 336826431F76B29C00732302 /* Build configuration list for PBXNativeTarget "GleanTn" */;
 			buildPhases = (
+				1B82A9DBEB80609D568DF285 /* [CP] Check Pods Manifest.lock */,
 				3368262D1F76B29C00732302 /* Sources */,
 				3368262E1F76B29C00732302 /* Frameworks */,
 				3368262F1F76B29C00732302 /* Resources */,
+				E7AE4F4275ED42B6806DC00B /* [CP] Embed Pods Frameworks */,
+				95EDD01D183D6BEC9742FED3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B82A9DBEB80609D568DF285 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95EDD01D183D6BEC9742FED3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GleanTn/Pods-GleanTn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7AE4F4275ED42B6806DC00B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GleanTn/Pods-GleanTn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3368262D1F76B29C00732302 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		336826441F76B29C00732302 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7573913075FA85AB12B019B /* Pods-GleanTn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 586EB56567;
@@ -272,6 +348,7 @@
 		};
 		336826451F76B29C00732302 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E87654BB2E46562431D9FB /* Pods-GleanTn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 586EB56567;
