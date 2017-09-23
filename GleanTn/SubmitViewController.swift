@@ -7,29 +7,25 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
 
 class SubmitViewController: UIViewController {
+    
+    var user: FIRUser?
+    var observerToken: UInt?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if let user = user {
+            let ref = FIRDatabase.database().reference(withPath: "farmers").child(user.uid)
+            observerToken = ref.queryOrderedByKey().observe(.value, with: { (snapshot) in
+                guard let data = snapshot.value as? [String: String] else {
+                    return
+                }
+                let profile = Profile.profile(json: data)
+            })
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

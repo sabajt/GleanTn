@@ -31,6 +31,10 @@ struct Profile {
             "email": email
         ]
     }
+    
+    static func profile(json: [String: String]) -> Profile {
+        return Profile(name: json["name"]!, street: json["street"]!, city: json["city"]!, state: json["state"]!, zip: json["zip"]!, phone: json["phone"]!, email: json["email"]!, uid: "")
+    }
 }
 
 class SignUpViewController: UIViewController {

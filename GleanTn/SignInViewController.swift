@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignInViewController: UIViewController {
 
@@ -16,6 +17,11 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let ref = FIRDatabase.database().reference(withPath: "farmers")
+        ref.queryOrderedByKey().observe(.value) { (snapshot) in
+            print(snapshot.value!)
+        }
     }
     
     @IBAction func signInPressed(_ sender: UIButton) {
@@ -32,15 +38,18 @@ class SignInViewController: UIViewController {
             print("### login error: couldn't load firebase auth")
             return
         }
-        auth.signIn(withEmail: email, password: password) { (user, error) in
-            guard let usr = user, error == nil else {
+        auth.signIn(withEmail: email, password: password) { (usr, error) in
+            guard let user = usr, error == nil else {
                 print("### login error: no user found with email: \(email), firebase error: \(error!)")
                 return
             }
-            print("### successful login with user: \(usr)")
+            print("### successful login with user: \(user)")
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "SubmitViewController")
+            guard let vc = storyboard.instantiateViewController(withIdentifier: "SubmitViewController") as? SubmitViewController else {
+                return
+            }
+            vc.user = user
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
