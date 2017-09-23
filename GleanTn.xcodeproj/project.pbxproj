@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3304F5201F76BACA00A90D46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3304F51F1F76BACA00A90D46 /* GoogleService-Info.plist */; };
 		331B90741F76E1FF0031EA34 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331B90731F76E1FF0031EA34 /* SignUpViewController.swift */; };
+		331B90781F7710190031EA34 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331B90771F7710190031EA34 /* SubmitViewController.swift */; };
 		336826351F76B29C00732302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336826341F76B29C00732302 /* AppDelegate.swift */; };
 		336826371F76B29C00732302 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336826361F76B29C00732302 /* SignInViewController.swift */; };
 		3368263A1F76B29C00732302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 336826381F76B29C00732302 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		0C5118EBFD163E61A0AF9E42 /* Pods_GleanTn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GleanTn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3304F51F1F76BACA00A90D46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		331B90731F76E1FF0031EA34 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		331B90771F7710190031EA34 /* SubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 		336826311F76B29C00732302 /* GleanTn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GleanTn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		336826341F76B29C00732302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		336826361F76B29C00732302 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				3304F51F1F76BACA00A90D46 /* GoogleService-Info.plist */,
 				336826401F76B29C00732302 /* Info.plist */,
 				331B90731F76E1FF0031EA34 /* SignUpViewController.swift */,
+				331B90771F7710190031EA34 /* SubmitViewController.swift */,
 			);
 			path = GleanTn;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331B90781F7710190031EA34 /* SubmitViewController.swift in Sources */,
 				331B90741F76E1FF0031EA34 /* SignUpViewController.swift in Sources */,
 				336826371F76B29C00732302 /* SignInViewController.swift in Sources */,
 				336826351F76B29C00732302 /* AppDelegate.swift in Sources */,

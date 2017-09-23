@@ -38,6 +38,10 @@ class SignInViewController: UIViewController {
                 return
             }
             print("### successful login with user: \(usr)")
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "SubmitViewController")
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     
